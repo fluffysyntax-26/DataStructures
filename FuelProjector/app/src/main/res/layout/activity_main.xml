@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Cost Estimator"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distance (Km)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etMileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Mileage (Km/L)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Fuel Type"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgFuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbPetrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Petrol (Rs.100)"
+            android:layout_marginEnd="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbDiesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diesel (Rs.90)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Cost"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#009900"/>
+
+</LinearLayout>

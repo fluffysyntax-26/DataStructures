@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CS Grade Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks in Java"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks in Data Structures"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDBMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks in DBMS"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks in Operating Systems"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks in Computer Networks"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Grade"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:text="Grade will appear here"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+</ScrollView>

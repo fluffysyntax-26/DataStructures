@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery Menu"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/cbMilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milk (Rs. 50)"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/cbSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sugar (Rs. 40)"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/cbBread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bread (Rs. 30)"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Bill"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

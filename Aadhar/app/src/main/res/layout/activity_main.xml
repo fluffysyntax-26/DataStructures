@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Eligibility Check"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/etAadhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Aadhar Number (12 digits)"
+        android:inputType="number"
+        android:maxLength="12"/>
+
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth (DD/MM/YYYY)"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Eligibility"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Result will appear here"
+        android:textColor="#000000"/>
+
+</LinearLayout>
